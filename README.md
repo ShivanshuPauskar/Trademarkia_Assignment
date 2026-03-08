@@ -58,14 +58,45 @@ Accepts a natural language query and returns semantic search results.
 }
 ```
 
-### Response
+### Example Queries
+
+First Query (Cache Miss)
+
+```json
+{
+  "query": "space shuttle launch"
+}
+```
+
+Example Response
+
+```json
+{
+  "query": "space shuttle launch",
+  "cache_hit": false,
+  "matched_query": null,
+  "similarity_score": 0,
+  "result": "...",
+  "dominant_cluster": 1
+}
+```
+
+Second Query (Semantic Cache Hit)
+
+```json
+{
+  "query": "recent nasa rocket launches"
+}
+```
+
+Example Response
 
 ```json
 {
   "query": "recent nasa rocket launches",
   "cache_hit": true,
   "matched_query": "space shuttle launch",
-  "similarity_score": 0.7083759307861328,
+  "similarity_score": 0.70,
   "result": "['sci.space', 'sci.space', 'sci.space']",
   "dominant_cluster": 1
 }
@@ -224,5 +255,6 @@ Trademarkia_Assignment
 # Author
 
 **Shivanshu Pauskar**
+
 
 
