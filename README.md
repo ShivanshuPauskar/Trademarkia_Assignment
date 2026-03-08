@@ -54,7 +54,7 @@ Accepts a natural language query and returns semantic search results.
 
 ```json
 {
-  "query": "space shuttle launch"
+  "query": "recent nasa rocket launches"
 }
 ```
 
@@ -62,10 +62,10 @@ Accepts a natural language query and returns semantic search results.
 
 ```json
 {
-  "query": "space shuttle launch",
-  "cache_hit": false,
-  "matched_query": null,
-  "similarity_score": 0,
+  "query": "recent nasa rocket launches",
+  "cache_hit": true,
+  "matched_query": "space shuttle launch",
+  "similarity_score": 0.7083759307861328,
   "result": "['sci.space', 'sci.space', 'sci.space']",
   "dominant_cluster": 1
 }
@@ -224,4 +224,5 @@ Trademarkia_Assignment
 # Author
 
 **Shivanshu Pauskar**
+
 
