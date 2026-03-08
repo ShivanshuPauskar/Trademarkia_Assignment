@@ -63,11 +63,11 @@ Accepts a natural language query and returns semantic search results.
 ```json
 {
   "query": "space shuttle launch",
-  "cache_hit": true,
-  "matched_query": "rocket launch nasa",
-  "similarity_score": 0.91,
-  "result": "...",
-  "dominant_cluster": 3
+  "cache_hit": false,
+  "matched_query": null,
+  "similarity_score": 0,
+  "result": "['sci.space', 'sci.space', 'sci.space']",
+  "dominant_cluster": 1
 }
 ```
 
@@ -224,3 +224,4 @@ Trademarkia_Assignment
 # Author
 
 **Shivanshu Pauskar**
+
