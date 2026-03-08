@@ -96,7 +96,7 @@ Example Response
   "query": "recent nasa rocket launches",
   "cache_hit": true,
   "matched_query": "space shuttle launch",
-  "similarity_score": 0.70,
+  "similarity_score": 0.7083759307861328,
   "result": "['sci.space', 'sci.space', 'sci.space']",
   "dominant_cluster": 1
 }
@@ -255,6 +255,7 @@ Trademarkia_Assignment
 # Author
 
 **Shivanshu Pauskar**
+
 
 
 
